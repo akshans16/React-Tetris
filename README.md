@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Tetris Game 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, browser-based Tetris game built with React. Enjoy classic gameplay, smooth animations, and a pixel-inspired UI—all in a single-page app!
 
-## Available Scripts
+## Screenshot 📷
 
-In the project directory, you can run:
+![React Tetris Screenshot](image.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features ✨
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Classic Tetris Gameplay:** Move, rotate, and drop tetrominos to clear lines and score points.
+- **Responsive UI:** Works on desktop and mobile screens.
+- **Styled Components:** Custom pixel-style visuals using `styled-components`.
+- **Instructions & Controls:** In-game instructions and keyboard controls for an authentic experience.
+- **Score & Level Tracking:** Displays your score, lines cleared, and current level.
+- **Game Over Detection:** Handles collision and game over logic.
 
-### `npm test`
+## Technologies Used 🧑‍💻
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React (functional components, hooks)
+- styled-components (for custom styles)
+- Create React App (project setup)
+- JavaScript (game logic)
+- CSS (pixel art, layout)
+- [Optional] Images for backgrounds and UI
 
-### `npm run build`
+## Getting Started ▶️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+	```sh
+	git clone <your-repo-url>
+	cd react-tetris
+	```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+	```sh
+	npm install
+	```
+	> **Required packages:**  
+	> - `react`, `react-dom`  
+	> - `styled-components`  
+	> - `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event`, `@testing-library/dom` (for testing)  
+	> - `react-scripts` (CRA)  
+	> - `web-vitals` (performance)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	> **Important:**
+	> This project uses `styled-components` for all custom styles. You must install it to run the project:
+	> ```sh
+	> npm install styled-components
+	> ```
 
-### `npm run eject`
+	> **Note for collaborators:**
+	> If you install any new libraries, please add them to this list and mention their purpose in the README so everyone is aware of new dependencies!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server:**
+	```sh
+	npm start
+	```
+	Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure 🏢
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `src/components/` – Game components (Tetris, Stage, Cell, Display, Instructions, etc.)
+- `src/hooks/` – Custom React hooks for game logic (usePlayer, useStage, useInterval)
+- `src/gameHelper.js` – Core game logic and utilities
+- `src/img/` – Images for backgrounds and UI
+- `src/index.js` – App entry point
+- `src/index.css` – Global styles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Customization ⚒️
 
-## Learn More
+- **Tetromino Shapes:** Edit `src/components/tetrominos.js` to change or add new shapes.
+- **Styles:** Update `src/components/styles/` for custom colors, fonts, or layouts.
+- **Instructions:** Modify `src/components/Instructions.js` for custom help text.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License 📜
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is open source and free to use for personal and educational purposes.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--- MADE WITH ❤️ FOR TETRIS FANS AND CODERS! ---
